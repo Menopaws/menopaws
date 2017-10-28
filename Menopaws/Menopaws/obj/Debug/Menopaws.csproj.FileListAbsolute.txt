@@ -1,0 +1,16 @@
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Menopaws.dll
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Menopaws.pdb
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Core.dll
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Core.xml
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/obj/Debug/Menopaws.csproj.CoreCompileInputs.cache
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/obj/Debug/Menopaws.App.xaml.g.cs
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/obj/Debug/Menopaws.Views.MainPage.xaml.g.cs
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/obj/Debug/Menopaws.dll
+/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Menopaws/obj/Debug/Menopaws.pdb

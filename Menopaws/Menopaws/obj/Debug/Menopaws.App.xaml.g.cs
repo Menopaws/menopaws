@@ -11,7 +11,8 @@
 namespace Menopaws {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Luce\\Desktop\\Menopaws\\Menopaws\\Menopaws\\Menopaws\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/luce/Documents/Development/Mobile Development/Xamarin/menopaws/Menopaws/Me" +
+        "nopaws/App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
