@@ -115,6 +115,9 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\kitteeeeeh%403x.jpeg" />
+    <BundleResource Include="Resources\kitteeeeeh%402x.jpeg" />
+    <BundleResource Include="Resources\kitteeeeeh.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -139,6 +142,9 @@
       <Project>{4C3A2284-D0F2-4F43-9AF3-AF2CEB4220FA}</Project>
       <Name>Menopaws</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.4.0.18342\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.18342\build\netstandard1.0\Xamarin.Forms.targets')" />

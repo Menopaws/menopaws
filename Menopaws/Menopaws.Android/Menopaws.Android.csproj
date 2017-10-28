@@ -135,6 +135,12 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\kitteeeeeh.jpeg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\kitteeeeeh.jpeg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\kitteeeeeh.jpeg" />
+    <AndroidResource Include="Resources\drawable-hdpi\kitteeeeeh.jpeg" />
+    <AndroidResource Include="Resources\drawable-mdpi\kitteeeeeh.jpeg" />
+    <AndroidResource Include="Resources\drawable-ldpi\kitteeeeeh.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -149,6 +155,14 @@
       <Project>{4C3A2284-D0F2-4F43-9AF3-AF2CEB4220FA}</Project>
       <Name>Menopaws</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-ldpi\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets')" />

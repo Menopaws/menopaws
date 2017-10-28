@@ -5,6 +5,7 @@
              x:Class="Menopaws.MainPage">
     <ContentPage.Content>
         <StackLayout>
+			<Image Source="kitteeeeeh.jpeg" />
             <Label Text="{Binding Status}"
                 HorizontalOptions="CenterAndExpand" />
 			<Button Text="Add Hot Flush" Command="{Binding AddFlushClicked}" />
