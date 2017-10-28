@@ -198,3 +198,8 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
+# On the fly
+*.ide
+*.suo
+*.cache
+
