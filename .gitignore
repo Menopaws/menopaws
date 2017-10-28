@@ -199,5 +199,7 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 # On the fly
-*.cache
+*.ide
 *.suo
+*.cache
+*.mdb
