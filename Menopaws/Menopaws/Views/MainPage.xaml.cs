@@ -7,11 +7,12 @@ using Xamarin.Forms;
 
 namespace Menopaws
 {
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class MainPage : ContentPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+			BindingContext = new MainPageViewModel();
+		}
+	}
 }
