@@ -21,6 +21,19 @@ namespace Menopaws.Data
             {
                 new MenopausalEvent
                 {
+                    ID = 4,
+                    Name = "Not myself! 04",
+                    Notes = "Not myself! 04",
+                    Date = System.DateTime.Now,
+                    Time = System.DateTime.Now.TimeOfDay,
+                    Description = "Not myself",
+                    IsTrigger = true,
+                    Intensity = 1,
+                    Done = true,
+                    Summary = "Not feeling like myself! Tue 3rd Oct, 2pm"
+                },
+                new MenopausalEvent
+                {
                     ID = 1,
                     Name = "Hot flush 01",
                     Notes = "Hot flush 01",
@@ -29,7 +42,8 @@ namespace Menopaws.Data
                     Description = "Hot flush",
                     IsTrigger = false,
                     Intensity = 3,
-                    Done = true
+                    Done = true,
+                    Summary = "Hot flush: Tue 3rd Oct, 3pm"
                 },
                 new MenopausalEvent
                 {
@@ -41,31 +55,8 @@ namespace Menopaws.Data
                     Description = "Hot flush",
                     IsTrigger = false,
                     Intensity = 4,
-                    Done = true
-                },
-                new MenopausalEvent
-                {
-                    ID = 3,
-                    Name = "Hot flush 03",
-                    Notes = "Hot flush 03",
-                    Date = System.DateTime.Now.AddDays(-2),
-                    Time = System.DateTime.Now.TimeOfDay,
-                    Description = "Hot flush",
-                    IsTrigger = false,
-                    Intensity = 1,
-                    Done = true
-                },
-                new MenopausalEvent
-                {
-                    ID = 4,
-                    Name = "Not myself! 04",
-                    Notes = "Not myself! 04",
-                    Date = System.DateTime.Now,
-                    Time = System.DateTime.Now.TimeOfDay,
-                    Description = "Not myself",
-                    IsTrigger = true,
-                    Intensity = 1,
-                    Done = true
+                    Done = true,
+                    Summary = "Hot flush: Tue 3rd Oct, 10pm"
                 },
                 new MenopausalEvent
                 {
@@ -77,7 +68,21 @@ namespace Menopaws.Data
                     Description = "Not myself",
                     IsTrigger = true,
                     Intensity = 1,
-                    Done = true
+                    Done = true,
+                    Summary = "Not feeling like myself! Wed 4th Oct, 1pm"
+                },
+                new MenopausalEvent
+                {
+                    ID = 3,
+                    Name = "Hot flush 03",
+                    Notes = "Hot flush 03",
+                    Date = System.DateTime.Now.AddDays(-2),
+                    Time = System.DateTime.Now.TimeOfDay,
+                    Description = "Hot flush",
+                    IsTrigger = false,
+                    Intensity = 1,
+                    Done = true,
+                    Summary = "Hot flush: Wed 4th Oct, 3pm"
                 },
                 new MenopausalEvent
                 {
@@ -89,7 +94,8 @@ namespace Menopaws.Data
                     Description = "Not myself",
                     IsTrigger = true,
                     Intensity = 1,
-                    Done = true
+                    Done = true,
+                    Summary = "Not feeling like myself! Thurs 5th Oct, 2pm"
                 }
             };
         }

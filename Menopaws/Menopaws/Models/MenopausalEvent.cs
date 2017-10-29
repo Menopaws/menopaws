@@ -15,6 +15,7 @@ namespace Menopaws.Models
         public String Description { get; set; }
         public bool IsTrigger { get; set; }
         public int Intensity { get; set; }
+        public String Summary { get; set; }
 
         // Copied from sample data code (TodoItem)
         public int ID { get; set; }
