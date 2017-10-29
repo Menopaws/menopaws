@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace Menopaws.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DateEntryPage : ContentView
+	public partial class DateEntryPage : ContentPage
     {
         public DateEntryPage ()
 		{

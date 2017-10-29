@@ -23,5 +23,7 @@
         </ListView>
 
         <Button x:Name="addHotFlushButton" Text="Add Hot Flush" Clicked="OnHotFlushButtonClicked" VerticalOptions="CenterAndExpand" />
+        <Button x:Name="addDateButton" Text="Add Date" Clicked="OnAddDateButtonClicked" VerticalOptions="CenterAndExpand" />
+        <Button x:Name="addTimeButton" Text="Add Time" Clicked="OnAddTimeButtonClicked" VerticalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>
