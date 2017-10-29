@@ -9,29 +9,29 @@ using Menopaws.Data;
 namespace Menopaws
 {
 	public partial class App : Application
-    {
-        static TodoItemDatabase database;
+	{
+		static TodoItemDatabase database;
 
-        public App()
+		public App()
 		{
 			InitializeComponent();
 
-			MainPage = new Menopaws.MainPage();
-        }
+			MainPage = new NavigationPage(new Menopaws.MainPage());
+		}
 
-        public static TodoItemDatabase Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new TodoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
-                }
-                return database;
-            }
-        }
+		public static TodoItemDatabase Database
+		{
+			get
+			{
+				if (database == null)
+				{
+					database = new TodoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+				}
+				return database;
+			}
+		}
 
-        protected override void OnStart()
+		protected override void OnStart()
 		{
 			// Handle when your app starts
 		}
