@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Menopaws.Texting
 {
-    public class StubbedTexting : ITexting
-    {
-        public String SendText(String phoneNumber)
-        {
-            return "Success!";
-        }
-    }
+	public class StubbedTexting : ITexting
+	{
+		public String SendText(String phoneNumber, String message)
+		{
+			return "Success!";
+		}
+	}
 }
