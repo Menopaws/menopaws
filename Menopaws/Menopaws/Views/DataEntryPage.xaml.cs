@@ -16,5 +16,10 @@ namespace Menopaws
         {
             await Navigation.PopAsync();
         }
+
+        async void OnDateSelected(object sender, EventArgs e)
+        {
+            var dateSelected = datePicker.Date;
+        }
     }
 }
