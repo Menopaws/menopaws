@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Telerik.XamarinForms.Input;
+using Menopaws.Models;
+using System.Collections.ObjectModel;
 
 namespace Menopaws
 {
 	public partial class CalendarPage : ContentPage
 	{
+		private ObservableCollection<Appointment> appointments;
+
 		public CalendarPage()
 		{
 			InitializeComponent();
@@ -14,9 +19,11 @@ namespace Menopaws
 			calendar.SelectionChanged += (sender, e) =>
 			{
 				String date = ((Telerik.XamarinForms.Input.RadCalendar)sender).SelectedDate.ToString();
-				date.Substring(0, 10);
-				DisplayAlert("Alert!", date, "OK");
+				date = date.Substring(0, 10);
+
+				AddNewRecord(date, "New Entry for Tracking");
 			};
+			appointments = new ObservableCollection<Appointment>();
 		}
 
 		async void OnDoneButtonClicked(object sender, EventArgs e)
@@ -28,5 +35,14 @@ namespace Menopaws
 		{
 			await Navigation.PushAsync(new InputTextPage());
 		}
+
+		void AddNewRecord(string datetime, string recordTitle)
+		{
+			appointments.Add(new Appointment(datetime.Substring(0, 10), "", recordTitle));
+			this.calendar.AppointmentsSource = appointments;
+
+		}
+
+
 	}
 }
