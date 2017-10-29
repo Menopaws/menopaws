@@ -9,6 +9,7 @@ namespace Menopaws
 	public class TimeEntryPageViewModel : INotifyPropertyChanged
 	{
 		private string status = "Nothing entered yet.";
+		private TimeSpan time = DateTime.Now.TimeOfDay;
 
 		public TimeEntryPageViewModel()
 		{
@@ -21,6 +22,17 @@ namespace Menopaws
 			set
 			{
 				status = value;
+				OnPropertyChanged();
+			}
+		}
+
+		public TimeSpan Time
+		{
+			get => time;
+
+			set
+			{
+				time = value;
 				OnPropertyChanged();
 			}
 		}
