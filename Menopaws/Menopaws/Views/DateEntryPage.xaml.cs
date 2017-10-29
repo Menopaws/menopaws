@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
-namespace Menopaws
+namespace Menopaws.Views
 {
-	public partial class DataEntryPage : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class DateEntryPage : ContentView
 	{
-		public DataEntryPage()
+		public DateEntryPage ()
 		{
-			InitializeComponent();
-		}
+			InitializeComponent ();
+        }
 
         async void OnDoneButtonClicked(object sender, EventArgs e)
         {

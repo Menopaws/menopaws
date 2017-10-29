@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace Menopaws.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TimeEnteringPage : ContentPage
-    {
-        public TimeEnteringPage()
-        {
-            InitializeComponent();
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TimeEntryPage : ContentView
+	{
+		public TimeEntryPage ()
+		{
+			InitializeComponent ();
             timePicker.PropertyChanged += (sender, e) =>
             {
                 if (e.PropertyName == TimePicker.TimeProperty.PropertyName)
