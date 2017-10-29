@@ -37,7 +37,7 @@ namespace Menopaws
 			await Navigation.PushAsync(new InputTextPage());
 		}
 
-		async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
+		void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
 		{
 
 		}

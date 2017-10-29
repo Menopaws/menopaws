@@ -11,23 +11,28 @@ namespace Menopaws.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DateEntryPage : ContentPage
-    {
-        public DateEntryPage ()
+	{
+		public DateEntryPage()
 		{
 			InitializeComponent();
-            BindingContext = new TimeEntryPageViewModel();
-        }
+			BindingContext = new TimeEntryPageViewModel();
+		}
 
-        async void OnDoneButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
+		async void OnDoneButtonClicked(object sender, EventArgs e)
+		{
+			await Navigation.PopAsync();
+		}
 
-        async void OnDateSelected(object sender, EventArgs e)
-        {
-            var dateSelected = datePicker.Date;
-            (BindingContext as TimeEntryPageViewModel).Status = "Date selected.";
-            //Status = DataAccess.AdoExample.DoSomeDataAccess();
-        }
-    }
+		async void OnDateSelected(object sender, EventArgs e)
+		{
+			var dateSelected = datePicker.Date;
+			(BindingContext as TimeEntryPageViewModel).Status = "Date selected.";
+			//Status = DataAccess.AdoExample.DoSomeDataAccess();
+		}
+
+		async void OnInputTextClicked(object sender, EventArgs args)
+		{
+			await Navigation.PushAsync(new InputTextPage());
+		}
+	}
 }
