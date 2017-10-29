@@ -8,6 +8,10 @@
             <Label Text="Data Entry"
                 HorizontalOptions="CenterAndExpand" />
 
+            <Label Text="{Binding Status}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
 
             <DatePicker x:Name="datePicker" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Now}" DateSelected="OnDateSelected">
                 <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>

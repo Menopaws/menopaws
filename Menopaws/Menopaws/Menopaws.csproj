@@ -39,6 +39,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\DateEntryPageViewModel.cs" />
+    <Compile Include="ViewModels\TimeEntryPageViewModel.cs" />
     <Compile Include="Views\DateEntryPage.xaml.cs">
       <DependentUpon>DateEntryPage.xaml</DependentUpon>
     </Compile>

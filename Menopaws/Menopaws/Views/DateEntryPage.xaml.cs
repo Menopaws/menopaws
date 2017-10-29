@@ -11,10 +11,11 @@ namespace Menopaws.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DateEntryPage : ContentView
-	{
-		public DateEntryPage ()
+    {
+        public DateEntryPage ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+            BindingContext = new TimeEntryPageViewModel();
         }
 
         async void OnDoneButtonClicked(object sender, EventArgs e)
@@ -25,6 +26,8 @@ namespace Menopaws.Views
         async void OnDateSelected(object sender, EventArgs e)
         {
             var dateSelected = datePicker.Date;
+            (BindingContext as TimeEntryPageViewModel).Status = "Date selected.";
+            //Status = DataAccess.AdoExample.DoSomeDataAccess();
         }
     }
 }
