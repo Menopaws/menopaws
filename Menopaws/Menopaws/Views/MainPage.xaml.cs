@@ -19,20 +19,25 @@ namespace Menopaws
 		async void OnHotFlushButtonClicked(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new CalendarPage());
-            //listView.ItemsSource = await App.Database.GetItemsAsync();
-        }
+			//listView.ItemsSource = await App.Database.GetItemsAsync();
+		}
 
-        async void OnAddTimeButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new TimeEntryPage());
-        }
+		async void OnAddTimeButtonClicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new TimeEntryPage());
+		}
 
-        async void OnAddDateButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new DateEntryPage());
-        }
+		async void OnAddDateButtonClicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new DateEntryPage());
+		}
 
-        async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
+		async void OnInputTextClicked(object sender, EventArgs args)
+		{
+			await Navigation.PushAsync(new InputTextPage());
+		}
+
+		async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
 		{
 			//((App)App.Current).ResumeAtTodoId = (e.SelectedItem as TodoItem).ID;
 			//Debug.WriteLine("setting ResumeAtTodoId = " + (e.SelectedItem as TodoItem).ID);
