@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Menopaws.Texting;
 
 namespace Menopaws
 {
@@ -10,6 +11,11 @@ namespace Menopaws
 		public InputTextPage()
 		{
 			InitializeComponent();
+		}
+
+		async void OnSendClicked(object sender, EventArgs args)
+		{
+
 		}
 	}
 }
