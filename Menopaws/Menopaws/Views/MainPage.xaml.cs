@@ -22,6 +22,11 @@ namespace Menopaws
 			//listView.ItemsSource = await App.Database.GetItemsAsync();
 		}
 
+		async void OnMoodButtonClicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new CalendarPage());
+		}
+
 		async void OnAddTimeButtonClicked(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new TimeEntryPage());

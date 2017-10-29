@@ -19,7 +19,7 @@ namespace Menopaws
 		{
 			if (phoneNumber.Text != null)
 			{
-				DisplayAlert("Alert", textingService.SendText(phoneNumber.Text), "OK");
+				DisplayAlert("Alert", textingService.SendText(phoneNumber.Text, message.Text), "OK");
 			}
 			else
 			{
