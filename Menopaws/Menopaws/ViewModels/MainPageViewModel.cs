@@ -11,12 +11,10 @@ namespace Menopaws
 	public class MainPageViewModel : INotifyPropertyChanged
 	{
 		public INavigation Navigation { get; set; }
-		private ITexting textingService { get; set; }
 
 		public MainPageViewModel(INavigation navigation)
 		{
 			this.Navigation = navigation;
-			textingService = new ClockworkTexting();
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged;
