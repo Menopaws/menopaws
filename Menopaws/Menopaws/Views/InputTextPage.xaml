@@ -6,7 +6,7 @@
 
 
 		<StackLayout BackgroundColor="#f2f2f2" Padding="1">
-		<Editor x:Name="message" HeightRequest="150"/>
+		<Editor x:Name="message" HeightRequest="150" Text="Help! I am trapped in an app having a crisis!"/>
 		</StackLayout>
 
 		<Button Clicked="OnSendClicked" Text="Send" />
