@@ -8,6 +8,6 @@
 			<Image Source="kitteeeeeh.jpeg" />
             <Label Text="{Binding Status}"
                 HorizontalOptions="CenterAndExpand" />
-			<Button Text="Add Hot Flush" Command="{Binding AddFlushClicked}" />
-        </StackLayout>
+        <Button x:Name="addHotFlushButton" Text="Add Hot Flush" Clicked="OnHotFlushButtonClicked" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
 </ContentPage>

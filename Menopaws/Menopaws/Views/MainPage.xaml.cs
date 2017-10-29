@@ -14,5 +14,10 @@ namespace Menopaws
 			InitializeComponent();
 			BindingContext = new MainPageViewModel(Navigation);
 		}
-	}
+
+        async void OnHotFlushButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CalendarPage());
+        }
+    }
 }

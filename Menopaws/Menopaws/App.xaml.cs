@@ -13,7 +13,7 @@ namespace Menopaws
 		{
 			InitializeComponent();
 
-			MainPage = new CalendarPage();
+			MainPage = new Menopaws.MainPage();
 		}
 
 		protected override void OnStart()
