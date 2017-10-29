@@ -11,5 +11,10 @@ namespace Menopaws
 		{
 			InitializeComponent();
 		}
-	}
+
+        async void OnDoneButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+    }
 }

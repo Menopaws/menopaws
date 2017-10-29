@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Menopaws.Views.TimeEntryPage">
+  <ContentView.Content>
+        <StackLayout>
+            <Label Text="Time Entry"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="{Binding Status}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+
+
+            <TimePicker x:Name="timePicker" VerticalOptions="CenterAndExpand" Time="{x:Static sys:DateTime.Now}">
+            </TimePicker>
+
+
+            <Button x:Name="doneButton" Text="Done" Clicked="OnDoneButtonClicked" VerticalOptions="CenterAndExpand" />
+            
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

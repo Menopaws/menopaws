@@ -8,6 +8,20 @@
 			<Image Source="kitteeeeeh.jpeg" />
             <Label Text="{Binding Status}"
                 HorizontalOptions="CenterAndExpand" />
-			<Button Text="Add Hot Flush" Command="{Binding AddFlushClicked}" />
-        </StackLayout>
+
+        <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                            <Image Source="check.png" HorizontalOptions="End" IsVisible="{Binding Done}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button x:Name="addHotFlushButton" Text="Add Hot Flush" Clicked="OnHotFlushButtonClicked" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
 </ContentPage>

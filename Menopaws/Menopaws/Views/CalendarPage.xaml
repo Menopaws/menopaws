@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-	xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Menopaws.CalendarPage">
-	<ContentPage.Content>
-		<telerikInput:RadCalendar x:Name="calendar"/>
-	</ContentPage.Content>
+
+	<StackLayout>
+        <Label Text="Calendar"
+                HorizontalOptions="CenterAndExpand" />
+        <Button x:Name="doneButton" Text="Done" Clicked="OnDoneButtonClicked" VerticalOptions="CenterAndExpand" />
+	</StackLayout>
 </ContentPage>
