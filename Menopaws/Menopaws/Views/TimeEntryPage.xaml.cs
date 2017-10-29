@@ -28,14 +28,13 @@ namespace Menopaws.Views
 
 		async void OnDoneButtonClicked(object sender, EventArgs e)
 		{
-            await Navigation.PopAsync();
+			await Navigation.PopAsync();
 		}
 
 		async void OnTimeSelected(object sender, EventArgs e)
 		{
 			var timeSelected = timePicker.Time;
-            DependencyService.Get<ITexting>().SendText("07777111222");
-            (BindingContext as TimeEntryPageViewModel).Status = "Time selected.";
+			(BindingContext as TimeEntryPageViewModel).Status = "Time selected.";
 			//Status = Menopaws.DataAccess.AdoExample.DoSomeDataAccess();
 		}
 
