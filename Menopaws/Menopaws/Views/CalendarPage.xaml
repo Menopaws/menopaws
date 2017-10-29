@@ -3,7 +3,10 @@
     xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Menopaws.CalendarPage">
 
-	<StackLayout>	
+	<StackLayout>
+		<Image Source="kitteeeeeh.jpeg" />
+
+		<Button Text="!!!" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>	
         <Label Text="Calendar"
                 HorizontalOptions="CenterAndExpand" />
         <telerikInput:RadCalendar x:Name="calendar"/>

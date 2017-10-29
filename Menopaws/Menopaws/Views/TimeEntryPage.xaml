@@ -5,6 +5,10 @@
              x:Class="Menopaws.Views.TimeEntryPage">
     <ContentPage.Content>
         <StackLayout>
+			<Image Source="kitteeeeeh.jpeg" />
+
+			<Button Text="!!!" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>
+			
             <Label Text="Time Entry"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

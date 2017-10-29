@@ -38,5 +38,10 @@ namespace Menopaws.Views
             (BindingContext as TimeEntryPageViewModel).Status = "Time selected.";
 			//Status = Menopaws.DataAccess.AdoExample.DoSomeDataAccess();
 		}
+
+		async void OnInputTextClicked(object sender, EventArgs args)
+		{
+			await Navigation.PushAsync(new InputTextPage());
+		}
 	}
 }

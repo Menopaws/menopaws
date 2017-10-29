@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Menopaws.Texting
 {
-    public interface ITexting
-    {
-        String SendText(String phoneNumber);
-    }
+	public interface ITexting
+	{
+		String SendText(String phoneNumber, String message);
+	}
 }

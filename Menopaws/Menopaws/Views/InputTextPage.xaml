@@ -1,5 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Menopaws.InputTextPage">
-	<ContentPage.Content>
-	</ContentPage.Content>
+	<StackLayout Padding="10">
+		<Image Source="kitteeeeeh.jpeg" />
+		<Entry x:Name="phoneNumber" Placeholder="Number to text.." />
+
+
+		<StackLayout BackgroundColor="#f2f2f2" Padding="1">
+		<Editor x:Name="message" HeightRequest="150"/>
+		</StackLayout>
+
+		<Button Clicked="OnSendClicked" Text="Send" />
+	</StackLayout>
 </ContentPage>
