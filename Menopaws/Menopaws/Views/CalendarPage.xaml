@@ -6,7 +6,7 @@
 	<StackLayout>
 		<Image Source="kitteeeeeh.jpeg" />
 
-		<Button Text="!!!" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>	
+		<Button Text="Crisis" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>	
         <Label Text="Calendar"
                 HorizontalOptions="CenterAndExpand" />
         <telerikInput:RadCalendar x:Name="calendar"/>

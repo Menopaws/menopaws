@@ -7,7 +7,7 @@
         <StackLayout Padding="10">
 			<Image Source="kitteeeeeh.jpeg" />
 
-			<Button Text="!!!" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>
+			<Button Text="Crisis" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>
 		
 
         <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected">
@@ -24,9 +24,6 @@
         </ListView>
 
         <Button x:Name="addHotFlushButton" Text="Add Hot Flush" Clicked="OnHotFlushButtonClicked" VerticalOptions="CenterAndExpand" />
-		<Button x:Name="addMoodButton" Text="Add Mood" Clicked="OnMoodButtonClicked" VerticalOptions="CenterAndExpand" />
-
-        <Button x:Name="addDateButton" Text="Add Date" Clicked="OnAddDateButtonClicked" VerticalOptions="CenterAndExpand" />
-        <Button x:Name="addTimeButton" Text="Add Time" Clicked="OnAddTimeButtonClicked" VerticalOptions="CenterAndExpand" />
+		<Button x:Name="addMoodButton" Text="Not Feeling Myself" Clicked="OnMoodButtonClicked" VerticalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>
