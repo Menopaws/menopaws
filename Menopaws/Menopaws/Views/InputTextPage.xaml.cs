@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Menopaws.Texting;
+using Plugin.Messaging;
 
 namespace Menopaws
 {
@@ -19,8 +20,25 @@ namespace Menopaws
 		{
 			if (phoneNumber.Text != null)
 			{
-				DisplayAlert("Alert", "Success", message.Text, "OK");
-				Navigation.PopAsync(true);
+				try
+				{
+					var smsMessenger = CrossMessaging.Current.SmsMessenger;
+					if (smsMessenger.CanSendSms)
+					{
+						smsMessenger.SendSmsInBackground(phoneNumber.Text, message.Text);
+						Navigation.PopAsync(true);
+					}
+					else
+					{
+						DisplayAlert("Alert!", "Device does not support SMS", "OK");
+					}
+
+				}
+				catch (Exception e)
+				{
+					DisplayAlert("Error!", e.Message, "OK");
+				}
+
 			}
 			else
 			{
