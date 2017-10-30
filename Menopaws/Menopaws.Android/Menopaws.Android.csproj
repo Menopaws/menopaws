@@ -56,21 +56,6 @@
     <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
     </Reference>
-    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\MonoAndroid\SQLitePCLRaw.batteries_green.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\MonoAndroid\SQLitePCLRaw.batteries_v2.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCLRaw.core.1.1.5\lib\MonoAndroid\SQLitePCLRaw.core.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.lib.e_sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e4ad490600e2234c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCLRaw.lib.e_sqlite3.android.1.1.5\lib\MonoAndroid\SQLitePCLRaw.lib.e_sqlite3.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.provider.e_sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9c301db686d0bd12, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCLRaw.provider.e_sqlite3.android.1.1.5\lib\MonoAndroid\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -140,59 +125,41 @@
     <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
       <HintPath>..\..\packages\Xamarin.Android.Support.v7.MediaRouter.26.0.2\lib\MonoAndroid80\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v8.RenderScript">
-      <HintPath>..\..\packages\Xamarin.Android.Support.v8.RenderScript.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v8.RenderScript.dll</HintPath>
-    </Reference>
     <Reference Include="SkiaSharp">
-      <HintPath>..\..\packages\SkiaSharp.1.55.1\lib\MonoAndroid\SkiaSharp.dll</HintPath>
+      <HintPath>..\..\packages\SkiaSharp.1.59.2\lib\MonoAndroid\SkiaSharp.dll</HintPath>
     </Reference>
     <Reference Include="SkiaSharp.Views.Android">
-      <HintPath>..\..\packages\SkiaSharp.Views.1.55.1\lib\MonoAndroid\SkiaSharp.Views.Android.dll</HintPath>
+      <HintPath>..\..\packages\SkiaSharp.Views.1.59.2\lib\MonoAndroid\SkiaSharp.Views.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\..\packages\SQLitePCLRaw.core.1.1.8\lib\MonoAndroid\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.lib.e_sqlite3">
+      <HintPath>..\..\packages\SQLitePCLRaw.lib.e_sqlite3.android.1.1.8\lib\MonoAndroid\SQLitePCLRaw.lib.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.e_sqlite3">
+      <HintPath>..\..\packages\SQLitePCLRaw.provider.e_sqlite3.android.1.1.8\lib\MonoAndroid\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.8\lib\MonoAndroid\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.8\lib\MonoAndroid\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v8.RenderScript">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v8.RenderScript.26.0.2\lib\MonoAndroid80\Xamarin.Android.Support.v8.RenderScript.dll</HintPath>
     </Reference>
     <Reference Include="SkiaSharp.Views.Forms">
-      <HintPath>..\..\packages\SkiaSharp.Views.Forms.1.55.1\lib\MonoAndroid\SkiaSharp.Views.Forms.dll</HintPath>
+      <HintPath>..\..\packages\SkiaSharp.Views.Forms.1.59.2\lib\MonoAndroid\SkiaSharp.Views.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Chart">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.Xamarin.Android.Chart.dll</HintPath>
+    <Reference Include="Syncfusion.SfCalendar.Android">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfCalendar.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfCalendar.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Common">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.Xamarin.Android.Common.dll</HintPath>
+    <Reference Include="Syncfusion.SfCalendar.XForms.Android">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfCalendar.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfCalendar.XForms.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Data">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.Xamarin.Android.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Input">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.Xamarin.Android.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.List">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.Xamarin.Android.List.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Primitives">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.Xamarin.Android.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Chart">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.XamarinForms.Chart.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Common">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.XamarinForms.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataControls">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.XamarinForms.DataControls.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataGrid">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.XamarinForms.DataGrid.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataVisualization">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.XamarinForms.DataVisualization.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Input">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.XamarinForms.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Primitives">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.XamarinForms.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.SkiaSharp">
-      <HintPath>..\..\packages\Telerik.UI.for.Xamarin.Trial.2017.3.1018.3\lib\MonoAndroid10\Telerik.XamarinForms.SkiaSharp.dll</HintPath>
+    <Reference Include="Syncfusion.SfCalendar.XForms">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfCalendar.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfCalendar.XForms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -253,4 +220,5 @@
   <Import Project="..\..\packages\Xamarin.Android.Support.v7.AppCompat.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.v7.AppCompat.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.v7.AppCompat.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.v7.AppCompat.targets')" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Design.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Design.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Design.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Design.targets')" />
   <Import Project="..\..\packages\Xamarin.Android.Support.v7.MediaRouter.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.v7.MediaRouter.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.v7.MediaRouter.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.v7.MediaRouter.targets')" />
+  <Import Project="..\..\packages\Xamarin.Android.Support.v8.RenderScript.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.v8.RenderScript.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.v8.RenderScript.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.v8.RenderScript.targets')" />
 </Project>

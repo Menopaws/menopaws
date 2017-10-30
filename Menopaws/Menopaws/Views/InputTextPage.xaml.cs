@@ -12,7 +12,7 @@ namespace Menopaws
 		public InputTextPage()
 		{
 			InitializeComponent();
-			textingService = new ClockworkTexting();
+
 		}
 
 		void OnSendClicked(object sender, EventArgs args)
