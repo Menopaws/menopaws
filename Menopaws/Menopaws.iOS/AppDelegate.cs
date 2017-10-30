@@ -4,7 +4,6 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-using Syncfusion.SfCalendar.XForms.iOS;
 
 namespace Menopaws.iOS
 {

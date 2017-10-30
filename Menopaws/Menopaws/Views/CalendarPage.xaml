@@ -9,7 +9,7 @@
 		<Image Source="kitteeeeeh.jpeg" />
 
 		<Button Text="Crisis" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>	
-        <Label Text="Calendar"
+        <Label Text="Schedule"
                 HorizontalOptions="CenterAndExpand" />
         
 		<Button x:Name="doneButton" Text="Done" Clicked="OnDoneButtonClicked" VerticalOptions="CenterAndExpand" />
