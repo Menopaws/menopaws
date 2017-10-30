@@ -12,7 +12,7 @@ namespace Menopaws
 		public MainPage()
 		{
 			InitializeComponent();
-			BindingContext = new MainPageViewModel(Navigation);
+			BindingContext = new MainPageViewModel();
 		}
 	}
 }

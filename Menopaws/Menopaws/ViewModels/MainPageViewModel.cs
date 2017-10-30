@@ -3,23 +3,35 @@ using System.Windows.Input;
 using System.ComponentModel;
 using Xamarin.Forms;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 
 namespace Menopaws
 {
 	public class MainPageViewModel : INotifyPropertyChanged
 	{
 		public ICommand AddFlushClicked { get; private set; }
-		public INavigation Navigation { get; set; }
+		private string status = "Welcome to Menopaws!";
 
 
-		public MainPageViewModel(INavigation navigation)
+		public MainPageViewModel()
 		{
-			this.Navigation = navigation;
-			AddFlushClicked = new Command(async () => await GoToCalendarPage());
+			AddFlushClicked = new Command(AddFlush);
 		}
 
-		public async Task GoToCalendarPage() => await Navigation.PushAsync(new CalendarPage());
+		private void AddFlush()
+		{
+			Status = "Hot Flush Added!";
+		}
+
+		public string Status
+		{
+			get => status;
+
+			set
+			{
+				status = value;
+				OnPropertyChanged();
+			}
+		}
 
 		public event PropertyChangedEventHandler PropertyChanged;
 
