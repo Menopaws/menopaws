@@ -25,7 +25,7 @@ namespace Menopaws.iOS
 		{
 			global::Xamarin.Forms.Forms.Init();
 
-			new SfCalendarRenderer();
+
 
 			LoadApplication(new App());
 
