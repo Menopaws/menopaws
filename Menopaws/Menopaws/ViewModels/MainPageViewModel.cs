@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Windows.Input;
 using System.ComponentModel;
-using Xamarin.Forms;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using Menopaws.Texting;
+using System.Windows.Input;
+using Xamarin.Forms;
+
 
 namespace Menopaws
 {

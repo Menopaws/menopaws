@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using Menopaws.Texting;
+
 using Plugin.Messaging;
 
 namespace Menopaws
 {
 	public partial class InputTextPage : ContentPage
 	{
-		private ITexting textingService { get; set; }
 		public InputTextPage()
 		{
 			InitializeComponent();
