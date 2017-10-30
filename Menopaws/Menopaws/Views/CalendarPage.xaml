@@ -11,7 +11,7 @@
 		<Button Text="Crisis" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>	
         <Label Text="Calendar"
                 HorizontalOptions="CenterAndExpand" />
-        <syncfusion:SfCalendar x:Name="calendar" WidthRequest="150" HeightRequest="250"/>
+        <syncfusion:SfCalendar x:Name="calendar" WidthRequest="150" HeightRequest="250" OnCalendarTapped="OnCalendarDateSelected"/>
 		<Button x:Name="doneButton" Text="Done" Clicked="OnDoneButtonClicked" VerticalOptions="CenterAndExpand" />
 	</StackLayout>
 </ContentPage>

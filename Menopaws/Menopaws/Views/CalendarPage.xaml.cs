@@ -33,5 +33,10 @@ namespace Menopaws
 		}
 
 
+		void OnCalendarDateSelected(object sender, Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs args)
+		{
+			String selectedDate = args.datetime.Day.ToString() + "/" + args.datetime.Month.ToString() + "/" + args.datetime.Year.ToString();
+			DisplayAlert("Selection!", selectedDate, "OK");
+		}
 	}
 }

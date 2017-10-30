@@ -178,6 +178,15 @@
     <Reference Include="Plugin.Messaging">
       <HintPath>..\..\packages\Xam.Plugins.Messaging.4.0.0\lib\Xamarin.iOS10\Plugin.Messaging.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.SfSchedule.iOS">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\Xamarin.iOS10\Syncfusion.SfSchedule.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.XForms">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\Xamarin.iOS10\Syncfusion.SfSchedule.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.XForms.iOS">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\Xamarin.iOS10\Syncfusion.SfSchedule.XForms.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Menopaws\Menopaws.csproj">
