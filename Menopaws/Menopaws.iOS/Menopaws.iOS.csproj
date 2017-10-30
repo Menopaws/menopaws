@@ -136,9 +136,6 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.2.4.0.18342\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfCalendar.iOS">
-      <HintPath>..\..\packages\Syncfusion.Xamarin.SfCalendar.IOS.15.3.0.33\lib\Xamarin.iOS10\Syncfusion.SfCalendar.iOS.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Menopaws\Menopaws.csproj">
