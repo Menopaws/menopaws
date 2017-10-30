@@ -4,31 +4,46 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using Menopaws.Data;
 
 namespace Menopaws
 {
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
+	public partial class App : Application
+	{
+		static TodoItemDatabase database;
 
-            MainPage = new Menopaws.MainPage();
-        }
+		public App()
+		{
+			InitializeComponent();
 
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
+			MainPage = new NavigationPage(new Menopaws.MainPage());
+		}
 
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
+		public static TodoItemDatabase Database
+		{
+			get
+			{
+				if (database == null)
+				{
+					database = new TodoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+				}
+				return database;
+			}
+		}
 
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
-        }
-    }
+		protected override void OnStart()
+		{
+			// Handle when your app starts
+		}
+
+		protected override void OnSleep()
+		{
+			// Handle when your app sleeps
+		}
+
+		protected override void OnResume()
+		{
+			// Handle when your app resumes
+		}
+	}
 }

@@ -203,3 +203,4 @@ FakesAssemblies/
 *.suo
 *.cache
 *.mdb
+*.user

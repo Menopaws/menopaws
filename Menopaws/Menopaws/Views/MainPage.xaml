@@ -3,12 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Menopaws"
              x:Class="Menopaws.MainPage">
-    <ContentPage.Content>
-        <StackLayout>
+ 
+        <StackLayout Padding="10">
 			<Image Source="kitteeeeeh.jpeg" />
-            <Label Text="{Binding Status}"
-                HorizontalOptions="CenterAndExpand" />
-			<Button Text="Add Hot Flush" Command="{Binding AddFlushClicked}" />
-        </StackLayout>
-    </ContentPage.Content>
+
+			<Button Text="Crisis" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>
+		
+
+        <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Label Text="{Binding Summary}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                            <Image Source="check.png" HorizontalOptions="End" IsVisible="true" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button x:Name="addHotFlushButton" Text="Add Hot Flush" Clicked="OnHotFlushButtonClicked" VerticalOptions="CenterAndExpand" />
+		<Button x:Name="addMoodButton" Text="Not Feeling Myself" Clicked="OnMoodButtonClicked" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
 </ContentPage>
