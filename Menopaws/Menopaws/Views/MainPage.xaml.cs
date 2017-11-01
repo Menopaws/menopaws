@@ -6,29 +6,30 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Menopaws.Views;
 using Menopaws.Data;
+using Syncfusion.SfSchedule.XForms;
 
 namespace Menopaws
 {
 	public partial class MainPage : ContentPage
 	{
-        private IMenopausalDataStore dataStore;
+		private IMenopausalDataStore dataStore;
 
 		public MainPage()
 		{
 			InitializeComponent();
-            dataStore = new MenopausalDataStub();
-            //BindingContext = new MainPageViewModel(Navigation);
-        }
+			dataStore = new MenopausalDataStub();
+			//BindingContext = new MainPageViewModel(Navigation);
+		}
 
 		async void OnHotFlushButtonClicked(object sender, EventArgs e)
 		{
-			await Navigation.PushAsync(new CalendarPage());
+			await Navigation.PushAsync(new SchedulePage());
 			listView.ItemsSource = dataStore.GetAllMenopausalEvents();
 		}
 
 		async void OnMoodButtonClicked(object sender, EventArgs e)
 		{
-			await Navigation.PushAsync(new CalendarPage());
+			await Navigation.PushAsync(new SchedulePage());
 		}
 
 		async void OnAddTimeButtonClicked(object sender, EventArgs e)

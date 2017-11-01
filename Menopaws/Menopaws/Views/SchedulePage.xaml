@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:CalendarSample="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
-	x:Class="Menopaws.CalendarPage" 
+	x:Class="Menopaws.SchedulePage" 
 	xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms">
 
 	<StackLayout>
@@ -11,7 +10,11 @@
 		<Button Text="Crisis" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>	
         <Label Text="Schedule"
                 HorizontalOptions="CenterAndExpand" />
-        <syncfusion:SfSchedule x:Name="schedule" ScheduleView="WeekView" FirstDayOfWeek="2"/>
-		<Button x:Name="doneButton" Text="Done" Clicked="OnDoneButtonClicked" VerticalOptions="CenterAndExpand" />
+        <syncfusion:SfSchedule 
+			x:Name="schedule" 
+			ScheduleView="WeekView" 
+			FirstDayOfWeek="2"
+			/>
+		<Button x:Name="doneButton" Text="Done" Clicked="OnDoneButtonClicked" VerticalOptions="CenterAndExpand"/>
 	</StackLayout>
 </ContentPage>

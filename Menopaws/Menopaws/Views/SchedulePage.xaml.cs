@@ -4,15 +4,18 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Menopaws.Models;
 using System.Collections.ObjectModel;
+using Syncfusion.SfSchedule.XForms;
 
 namespace Menopaws
 {
-	public partial class CalendarPage : ContentPage
+	public partial class SchedulePage : ContentPage
 	{
-
-		public CalendarPage()
+		ScheduleAppointmentCollection scheduleAppointmentCollection;
+		public SchedulePage()
 		{
 			InitializeComponent();
+			schedule.CellDoubleTapped += OnCellTapped;
+			scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 
 		}
 
@@ -26,10 +29,9 @@ namespace Menopaws
 			await Navigation.PushAsync(new InputTextPage());
 		}
 
-		void AddNewRecord(string datetime, string recordTitle)
+		void OnCellTapped(object sender, CellTappedEventArgs e)
 		{
-			throw new NotImplementedException();
-
+			DisplayAlert("Tapped!", sender.ToString(), "OK");
 		}
 	}
 }

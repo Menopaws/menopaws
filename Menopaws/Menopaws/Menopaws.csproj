@@ -55,8 +55,8 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\MainPageViewModel.cs" />
-    <Compile Include="Views\CalendarPage.xaml.cs">
-      <DependentUpon>CalendarPage.xaml</DependentUpon>
+    <Compile Include="Views\SchedulePage.xaml.cs">
+      <DependentUpon>SchedulePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TimeEntryPage.xaml.cs">
       <DependentUpon>TimeEntryPage.xaml</DependentUpon>
@@ -80,7 +80,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CalendarPage.xaml">
+    <EmbeddedResource Include="Views\SchedulePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MasterHomePage.xaml">
