@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Syncfusion.SfSchedule.XForms.iOS;
 using UIKit;
 
 namespace Menopaws.iOS
@@ -24,7 +25,7 @@ namespace Menopaws.iOS
 		{
 			global::Xamarin.Forms.Forms.Init();
 
-
+			SfScheduleRenderer.Init();
 
 			LoadApplication(new App());
 

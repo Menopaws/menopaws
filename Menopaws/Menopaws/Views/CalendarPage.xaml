@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:CalendarSample="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
 	x:Class="Menopaws.CalendarPage" 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms">
 
 	<StackLayout>
 		<Image Source="kitteeeeeh.jpeg" />
@@ -11,7 +11,7 @@
 		<Button Text="Crisis" Clicked="OnInputTextClicked" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>	
         <Label Text="Schedule"
                 HorizontalOptions="CenterAndExpand" />
-        
+        <syncfusion:SfSchedule x:Name="schedule" ScheduleView="WeekView" FirstDayOfWeek="2"/>
 		<Button x:Name="doneButton" Text="Done" Clicked="OnDoneButtonClicked" VerticalOptions="CenterAndExpand" />
 	</StackLayout>
 </ContentPage>
