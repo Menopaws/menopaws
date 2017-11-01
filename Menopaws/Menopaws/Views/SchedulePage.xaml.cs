@@ -14,8 +14,18 @@ namespace Menopaws
 		public SchedulePage()
 		{
 			InitializeComponent();
-			schedule.CellDoubleTapped += OnCellTapped;
+
 			scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+		}
+
+		public SchedulePage(string callingPageName)
+		{
+			InitializeComponent();
+
+			schedule.CellDoubleTapped += (object sender, CellTappedEventArgs e) =>
+			{
+				DisplayAlert("Tapped!", callingPageName, "OK");
+			};
 
 		}
 
@@ -27,11 +37,6 @@ namespace Menopaws
 		async void OnInputTextClicked(object sender, EventArgs args)
 		{
 			await Navigation.PushAsync(new InputTextPage());
-		}
-
-		void OnCellTapped(object sender, CellTappedEventArgs e)
-		{
-			DisplayAlert("Tapped!", sender.ToString(), "OK");
 		}
 	}
 }

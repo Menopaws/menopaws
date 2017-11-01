@@ -23,13 +23,13 @@ namespace Menopaws
 
 		async void OnHotFlushButtonClicked(object sender, EventArgs e)
 		{
-			await Navigation.PushAsync(new SchedulePage());
+			await Navigation.PushAsync(new SchedulePage("Hot Flush"));
 			listView.ItemsSource = dataStore.GetAllMenopausalEvents();
 		}
 
 		async void OnMoodButtonClicked(object sender, EventArgs e)
 		{
-			await Navigation.PushAsync(new SchedulePage());
+			await Navigation.PushAsync(new SchedulePage("Change of Mood"));
 		}
 
 		async void OnAddTimeButtonClicked(object sender, EventArgs e)
