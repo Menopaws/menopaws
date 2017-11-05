@@ -18,7 +18,7 @@ namespace Menopaws
 		{
 			InitializeComponent();
 			dataStore = new MenopausalDataStub();
-			//BindingContext = new MainPageViewModel(Navigation);
+			BindingContext = new MainPageViewModel(Navigation);
 		}
 
 		async void OnHotFlushButtonClicked(object sender, EventArgs e)

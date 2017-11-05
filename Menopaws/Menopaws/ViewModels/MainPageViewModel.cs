@@ -12,10 +12,15 @@ namespace Menopaws
 	{
 		public INavigation Navigation { get; set; }
 
+		public ICommand CrisisButtonCommand { get; private set; }
+
 		public MainPageViewModel(INavigation navigation)
 		{
 			this.Navigation = navigation;
+			CrisisButtonCommand = new Command(NavigateSendTextPage);
 		}
+
+		void NavigateSendTextPage() => Navigation.PushAsync(new InputTextPage());
 
 		public event PropertyChangedEventHandler PropertyChanged;
 

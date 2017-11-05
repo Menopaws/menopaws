@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 using Xamarin.Forms;
 using Menopaws.Data;
 
@@ -15,6 +18,9 @@ namespace Menopaws
 		public App()
 		{
 			InitializeComponent();
+
+			MobileCenter.Start("android=33593bd5-0d32-45af-8142-dada9967c93d;",
+				   typeof(Analytics), typeof(Crashes));
 
 			MainPage = new NavigationPage(new Menopaws.MainPage());
 		}

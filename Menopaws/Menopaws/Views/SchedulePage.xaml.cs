@@ -15,15 +15,25 @@ namespace Menopaws
 		{
 			InitializeComponent();
 
-			scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+
 		}
 
 		public SchedulePage(string callingPageName)
 		{
 			InitializeComponent();
 
+			scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+
 			schedule.CellDoubleTapped += (object sender, CellTappedEventArgs e) =>
 			{
+				scheduleAppointmentCollection.Add((new ScheduleAppointment()
+				{
+					StartTime = new DateTime(2017, 10, 31, 11, 0, 0),
+					EndTime = new DateTime(2017, 05, 08, 12, 0, 0),
+					Subject = callingPageName,
+					Location = "Hutchison road",
+				}));
+				schedule.DataSource = scheduleAppointmentCollection;
 				DisplayAlert("Tapped!", callingPageName, "OK");
 			};
 
