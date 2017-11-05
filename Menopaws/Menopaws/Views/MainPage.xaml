@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Menopaws"
              x:Class="Menopaws.MainPage">
  
         <StackLayout Padding="10">
 			<Image Source="kitteeeeeh.jpeg" />
 
-			<Button Text="Crisis" Command="{Binding CrisisButtonCommand}" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>
+			<Button Text="Crisis" Command="{Binding CrisisCommand}" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>
 		
 
-        <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected">
+        <ListView x:Name="listView" Margin="20" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                             <Label Text="{Binding Summary}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
-                            <Image Source="check.png" HorizontalOptions="End" IsVisible="true" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button x:Name="addHotFlushButton" Text="Add Hot Flush" Clicked="OnHotFlushButtonClicked" VerticalOptions="CenterAndExpand" />
-		<Button x:Name="addMoodButton" Text="Not Feeling Myself" Clicked="OnMoodButtonClicked" VerticalOptions="CenterAndExpand" />
+        <Button x:Name="addHotFlushButton" Text="Add Hot Flush" Command="{Binding HotFlushCommand}" VerticalOptions="CenterAndExpand" />
+		<Button x:Name="addMoodButton" Text="Not Feeling Myself" Command="{Binding ChangeMoodCommand}" VerticalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>
