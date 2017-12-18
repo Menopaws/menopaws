@@ -12,13 +12,13 @@ namespace Menopaws
 {
 	public partial class MainPage : ContentPage
 	{
-		private IMenopausalDataStore dataStore;
+        private readonly IMenopausalDataStore dataStore;
 
-		public MainPage()
+        public MainPage()
 		{
 			InitializeComponent();
 			dataStore = new MenopausalDataStub();
-			BindingContext = new MainPageViewModel(Navigation);
-		}
+			BindingContext = new MainPageViewModel(Navigation, dataStore);
+        }
 	}
 }

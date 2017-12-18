@@ -12,21 +12,21 @@ namespace Menopaws
 	public class MainPageViewModel : INotifyPropertyChanged
 	{
 		public INavigation Navigation { get; set; }
-		private IMenopausalDataStore dataStore;
+	    private IMenopausalDataStore _dataStore;
 
 
-		public ICommand CrisisCommand { get; private set; }
+        public ICommand CrisisCommand { get; private set; }
 		public ICommand HotFlushCommand { get; private set; }
 		public Command ChangeMoodCommand { get; private set; }
 
 
-		public MainPageViewModel(INavigation navigation)
+		public MainPageViewModel(INavigation navigation, IMenopausalDataStore dataStore)
 		{
-			this.Navigation = navigation;
+		    _dataStore = dataStore;
+		    this.Navigation = navigation;
 			CrisisCommand = new Command(NavigateSendTextPage);
 			HotFlushCommand = new Command(NavigateLogHotFlush);
 			ChangeMoodCommand = new Command(NavigateLogNotMyself);
-			dataStore = new MenopausalDataStub();
 		}
 
 		void NavigateSendTextPage() => Navigation.PushAsync(new InputTextPage());
@@ -34,13 +34,13 @@ namespace Menopaws
 		void NavigateLogHotFlush()
 		{
 			Navigation.PushAsync(new SchedulePage("Hot Flush"));
-			ListItemSelected = dataStore.GetAllMenopausalEvents();
+			ListItemSelected = _dataStore.GetAllMenopausalEvents();
 		}
 
 		void NavigateLogNotMyself()
 		{
 			Navigation.PushAsync(new SchedulePage("Not feeling myself"));
-			ListItemSelected = dataStore.GetAllMenopausalEvents();
+			ListItemSelected = _dataStore.GetAllMenopausalEvents();
 		}
 
 		public object ListItemSelected
