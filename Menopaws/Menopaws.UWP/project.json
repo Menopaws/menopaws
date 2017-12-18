@@ -1,10 +1,11 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "Syncfusion.Xamarin.SfSchedule": "15.3.0.33",
     "Xamarin.Forms": "2.4.0.280"
   },
   "frameworks": {
-    "uap10.0": {}
+    "uap10.0.15063": {}
   },
   "runtimes": {
     "win10-arm": {},

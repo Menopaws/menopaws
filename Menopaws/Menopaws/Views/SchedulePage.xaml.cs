@@ -10,7 +10,7 @@ namespace Menopaws
 {
 	public partial class SchedulePage : ContentPage
 	{
-		public SchedulePage()
+        public SchedulePage()
 		{
 			InitializeComponent();
 		}

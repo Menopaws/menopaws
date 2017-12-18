@@ -56,6 +56,15 @@
     <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.SfSchedule.Android, Version=15.3451.0.33, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfSchedule.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.XForms, Version=15.3451.0.33, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfSchedule.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.XForms.Android, Version=15.3451.0.33, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfSchedule.XForms.Android.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -100,15 +109,6 @@
     </Reference>
     <Reference Include="Plugin.Messaging">
       <HintPath>packages\Xam.Plugins.Messaging.4.0.0\lib\MonoAndroid10\Plugin.Messaging.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfSchedule.Android">
-      <HintPath>packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfSchedule.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfSchedule.XForms.Android">
-      <HintPath>packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfSchedule.XForms.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfSchedule.XForms">
-      <HintPath>packages\Syncfusion.Xamarin.SfSchedule.15.3.0.33\lib\MonoAndroid10\Syncfusion.SfSchedule.XForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.Mobile.Android.Bindings">
       <HintPath>..\..\packages\Microsoft.Azure.Mobile.0.17.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.Android.Bindings.dll</HintPath>
