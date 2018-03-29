@@ -13,6 +13,7 @@ namespace Menopaws
     {
         ScheduleAppointmentCollection scheduleAppointmentCollection;
         IMenopausalDataStore _dataStore;
+        private string _defaultEventName;
 
         public SchedulePage()
 		{
@@ -25,6 +26,7 @@ namespace Menopaws
 			InitializeComponent();
             _dataStore = dataStore;
             InitialiseSchedule();
+            _defaultEventName = callingPageName;
 		}
 
         private void InitialiseSchedule() 
@@ -45,7 +47,14 @@ namespace Menopaws
 
         void OnCellTapped(object sender, CellTappedEventArgs e)
         {
-            DisplayAlert("Tapped!", sender.ToString(), "OK");
+            var newAppointment = new ScheduleAppointment()
+            {
+                StartTime = DateTime.Now,
+                EndTime = DateTime.Now.AddHours(2),
+                Subject = _defaultEventName
+            };
+            scheduleAppointmentCollection.Add(newAppointment);
+            schedule.DataSource = scheduleAppointmentCollection;
         }
 	}
 }
