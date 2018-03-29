@@ -11,7 +11,6 @@ namespace Menopaws
 {
 	public partial class SchedulePage : ContentPage
     {
-        ScheduleAppointmentCollection scheduleAppointmentCollection;
         IMenopausalDataStore _dataStore;
         private string _defaultEventName;
 
@@ -21,18 +20,24 @@ namespace Menopaws
             InitialiseSchedule();
 		}
 
-        public SchedulePage(string callingPageName, IMenopausalDataStore dataStore)
+        public SchedulePage(IMenopausalDataStore dataStore)
 		{
 			InitializeComponent();
+
             _dataStore = dataStore;
+            _defaultEventName = "Hot flush";
+
             InitialiseSchedule();
-            _defaultEventName = callingPageName;
 		}
+
+        public void SetDefaultEvent(string defaultEventName)
+        {
+            _defaultEventName = defaultEventName;
+        }
 
         private void InitialiseSchedule() 
         {
             schedule.CellDoubleTapped += OnCellTapped;
-            scheduleAppointmentCollection = new ScheduleAppointmentCollection();
         }
 
 		async void OnDoneButtonClicked(object sender, EventArgs e)
@@ -45,13 +50,28 @@ namespace Menopaws
 			await Navigation.PushAsync(new InputTextPage());
         }
 
+        private ScheduleAppointmentCollection CreateAndPopulateNewAppointmentCollection()
+        {
+            var newCollection = new ScheduleAppointmentCollection();
+            if (schedule.DataSource != null)
+            {
+                foreach (var appt in schedule.DataSource)
+                {
+                    newCollection.Add(appt as ScheduleAppointment);
+                }
+            }
+            return newCollection;
+        }
+
         void OnCellTapped(object sender, CellTappedEventArgs e)
         {
+            var scheduleAppointmentCollection = CreateAndPopulateNewAppointmentCollection();
             var newAppointment = new ScheduleAppointment()
             {
                 StartTime = DateTime.Now,
                 EndTime = DateTime.Now.AddHours(2),
-                Subject = _defaultEventName
+                Subject = _defaultEventName,
+                Location = "Here!"
             };
             scheduleAppointmentCollection.Add(newAppointment);
             schedule.DataSource = scheduleAppointmentCollection;
