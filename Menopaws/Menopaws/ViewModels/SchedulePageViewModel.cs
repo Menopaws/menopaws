@@ -1,4 +1,13 @@
-﻿namespace UnitTests
+﻿using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Menopaws.Data;
+using Menopaws.Models;
+using Xamarin.Forms;
+
+namespace Menopaws
 {
 	public class SchedulePageViewModel
 	{

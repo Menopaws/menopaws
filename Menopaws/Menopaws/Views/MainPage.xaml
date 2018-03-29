@@ -7,7 +7,6 @@
 			<Image Source="kitteeeeeh.jpeg" />
 
 			<Button Text="Crisis" Command="{Binding CrisisCommand}" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>
-		
 
         <ListView x:Name="listView" Margin="20" >
             <ListView.ItemTemplate>

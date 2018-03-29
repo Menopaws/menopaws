@@ -12,7 +12,6 @@ namespace Menopaws
 		public InputTextPage()
 		{
 			InitializeComponent();
-
 		}
 
 		void OnSendClicked(object sender, EventArgs args)
@@ -21,29 +20,26 @@ namespace Menopaws
 			{
 				try
 				{
-					var smsMessenger = CrossMessaging.Current.SmsMessenger;
-					if (smsMessenger.CanSendSms)
-					{
-						smsMessenger.SendSmsInBackground(phoneNumber.Text, message.Text);
-						Navigation.PopAsync(true);
-					}
+                    var smsMessenger = CrossMessaging.Current.SmsMessenger;
+                    if (smsMessenger.CanSendSms)
+                    {
+                        smsMessenger.SendSms(phoneNumber.Text, message.Text);
+                        Navigation.PopAsync(true);
+                    }
 					else
 					{
 						DisplayAlert("Alert!", "Device does not support SMS", "OK");
 					}
-
 				}
 				catch (Exception e)
 				{
 					DisplayAlert("Error!", e.Message, "OK");
 				}
-
 			}
 			else
 			{
 				DisplayAlert("Alert", "Please enter a phone number", "OK");
 			}
-
 		}
 	}
 }
