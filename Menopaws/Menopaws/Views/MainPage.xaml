@@ -2,13 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menopaws.MainPage">
- 
-        <StackLayout Padding="10">
-			<Image Source="kitteeeeeh.jpeg" />
 
-			<Button Text="Crisis" Command="{Binding CrisisCommand}" BackgroundColor="Red" WidthRequest="100" TextColor="Black"/>
+	<Grid>
+		<Image Source="kitten" Aspect="AspectFill" />
+		 <StackLayout Padding="10">
+			<Label Text="Menopaws" FontSize="40" TextColor="Black" Opacity="1" HorizontalOptions="Center" />
+			<Button Text="Crisis" Command="{Binding CrisisCommand}" BackgroundColor="Red" WidthRequest="100"/>
 
-        <ListView x:Name="listView" Margin="20" >
+        <ListView x:Name="listView" Margin="20" Opacity="0.5">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -20,7 +21,9 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button x:Name="addHotFlushButton" Text="Add Hot Flush" Command="{Binding HotFlushCommand}" VerticalOptions="CenterAndExpand" />
-		<Button x:Name="addMoodButton" Text="Not Feeling Myself" Command="{Binding ChangeMoodCommand}" VerticalOptions="CenterAndExpand" />
+        <Button x:Name="addHotFlushButton" Text="Add Hot Flush"  TextColor="White" Command="{Binding HotFlushCommand}" VerticalOptions="CenterAndExpand" BackgroundColor="CadetBlue" Opacity="0.75"/>
+		<Button x:Name="addMoodButton" Text="Not Feeling Myself" TextColor="White" Command="{Binding ChangeMoodCommand}" VerticalOptions="CenterAndExpand" BackgroundColor="CadetBlue" Opacity="0.75"/>
     </StackLayout>
+	</Grid>
+       
 </ContentPage>

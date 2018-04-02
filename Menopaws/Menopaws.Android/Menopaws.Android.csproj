@@ -18,7 +18,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
     <JavaMaximumHeapSize />
@@ -228,6 +228,13 @@
     <AndroidResource Include="Resources\drawable-mdpi\kitteeeeeh.jpeg" />
     <AndroidResource Include="Resources\drawable-ldpi\kitteeeeeh.jpeg" />
     <AndroidResource Include="Resources\xml\file_paths.xml" />
+    <AndroidResource Include="Resources\drawable\kitten.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\kitten.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\kitten.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\kitten.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\kitten.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\kitten.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\kitten.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

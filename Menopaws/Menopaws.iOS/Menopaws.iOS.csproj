@@ -119,6 +119,9 @@
     <BundleResource Include="Resources\kitteeeeeh%403x.jpeg" />
     <BundleResource Include="Resources\kitteeeeeh%402x.jpeg" />
     <BundleResource Include="Resources\kitteeeeeh.jpeg" />
+    <BundleResource Include="Resources\kitten.png" />
+    <BundleResource Include="Resources\kitten%402x.png" />
+    <BundleResource Include="Resources\kitten%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
