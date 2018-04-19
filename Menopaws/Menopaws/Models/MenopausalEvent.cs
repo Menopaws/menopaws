@@ -9,9 +9,13 @@ namespace Menopaws.Models
 {
     public class MenopausalEvent
     {
+        public MenopausalEvent()
+        {
+        }
+
         [PrimaryKey, AutoIncrement]
-        public DateTime Date { get; set; }
-        public TimeSpan Time { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
         public String Description { get; set; }
         public bool IsTrigger { get; set; }
         public int Intensity { get; set; }

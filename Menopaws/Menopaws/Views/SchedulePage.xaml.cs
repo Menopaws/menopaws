@@ -70,8 +70,7 @@ namespace Menopaws
             {
                 StartTime = DateTime.Now,
                 EndTime = DateTime.Now.AddHours(2),
-                Subject = _defaultEventName,
-                Location = "Here!"
+                Subject = _defaultEventName
             };
             scheduleAppointmentCollection.Add(newAppointment);
             schedule.DataSource = scheduleAppointmentCollection;

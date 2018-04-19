@@ -5,6 +5,8 @@ using System.Linq;
 using Foundation;
 using Syncfusion.SfSchedule.XForms.iOS;
 using UIKit;
+using Xamarin.Forms;
+using Menopaws;
 
 namespace Menopaws.iOS
 {
