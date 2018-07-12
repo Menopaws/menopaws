@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Menopaws.Models;
+using Syncfusion.SfSchedule.XForms;
 
 namespace Menopaws.Data
 {
@@ -12,5 +13,7 @@ namespace Menopaws.Data
 		void AddEvent(MenopausalEvent menopausalEvent);
 
 		List<MenopausalEvent> GetAllMenopausalEvents();
+
+		ScheduleAppointmentCollection CreateAppointmentCollection();
 	}
 }
