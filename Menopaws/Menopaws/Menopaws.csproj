@@ -37,7 +37,7 @@
   <ItemGroup>
     <Compile Include="Data\IMenopausalDataStore.cs" />
     <Compile Include="Data\IFileHelper.cs" />
-    <Compile Include="Data\MenopausalDataStub.cs" />
+    <Compile Include="Data\MenopausalDataStore.cs" />
     <Compile Include="Data\SQLite.cs" />
     <Compile Include="Data\TodoItemDatabase.cs" />
     <Compile Include="Models\MenopausalEvent.cs" />

@@ -47,6 +47,8 @@
     <Compile Include="Test.cs" />
     <Compile Include="MenopawsEventsTests.cs" />
     <Compile Include="MenopawsEvents.cs" />
+    <Compile Include="SchedulePageViewModelTests.cs" />
+    <Compile Include="MenopausalDataStoreTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

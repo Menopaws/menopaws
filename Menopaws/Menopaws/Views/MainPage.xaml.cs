@@ -17,7 +17,7 @@ namespace Menopaws
         public MainPage()
 		{
 			InitializeComponent();
-			dataStore = new MenopausalDataStub();
+			dataStore = new MenopausalDataStore();
 			BindingContext = new MainPageViewModel(Navigation, dataStore);
         }
 	}

@@ -18,9 +18,10 @@ namespace Menopaws
 
 		public IMenopausalDataStore MenopausalDataStore { get; }
 
-		public void AddHotFlush(MenopausalEvent hotFlush)
+		public void AddEvent(MenopausalEvent menopausalEvent)
 		{
-			MenopausalDataStore.AddEvent(hotFlush);
+			MenopausalDataStore.AddEvent(menopausalEvent);
 		}
+
 	}
 }
