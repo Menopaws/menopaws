@@ -25,7 +25,7 @@ namespace Menopaws.UnitTests
 
 			// Assert
 			Assert.AreEqual(1, allEvents.Count);
-			Assert.AreEqual(menopausalEvent.Description, allEvents[1].Description);
+			Assert.AreEqual(menopausalEvent.Description, allEvents[0].Description);
 		}
 	}
 }

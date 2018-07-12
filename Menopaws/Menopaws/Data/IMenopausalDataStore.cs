@@ -7,10 +7,10 @@ using Menopaws.Models;
 
 namespace Menopaws.Data
 {
-    public interface IMenopausalDataStore
-    {
-        String AddEvent(MenopausalEvent menopausalEvent);
+	public interface IMenopausalDataStore
+	{
+		void AddEvent(MenopausalEvent menopausalEvent);
 
-        List<MenopausalEvent> GetAllMenopausalEvents();
-    }
+		List<MenopausalEvent> GetAllMenopausalEvents();
+	}
 }

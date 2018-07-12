@@ -10,14 +10,16 @@ namespace Menopaws.Data
 {
 	public class MenopausalDataStore : IMenopausalDataStore
 	{
-		public String AddEvent(MenopausalEvent menopausalEvent)
+		List<MenopausalEvent> allEvents = new List<MenopausalEvent>();
+
+		public void AddEvent(MenopausalEvent menopausalEvent)
 		{
-			return "Success!";
+			allEvents.Add(menopausalEvent);
 		}
 
 		public List<MenopausalEvent> GetAllMenopausalEvents()
 		{
-			return new List<MenopausalEvent>();
+			return allEvents;
 		}
 	}
 }
