@@ -1,0 +1,28 @@
+Useful commands for menopaws:
+
+NEW APP:
+
+react-native init [newappNameInCamelCase]
+
+
+EXISTING APP:
+
+cd dev/ReactJsTutorial/jeopardyTutorial
+cd dev/menopause/menopaws
+react-native run-ios
+http://localhost:8081/
+npm start -- --reset-cache
+
+FOLLOWING THE TUTORIAL:
+yarn add styled-components react-navigation
+yarn add react-native-elements
+(!! Prob not cos of line above!!) npm install --save styled-components
+import styled from 'styled-components/native';
+import { TabNavigator } from 'react-navigation';
+<Image source={require('./img/jeopardy-js.png')}/>
+
+
+styled-components@2.2.1 requires a peer of react@>= 0.14.0 < 17.0.0-0 but none was installed.
+react@16.0.0-beta.5
+
+

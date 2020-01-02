@@ -1,0 +1,103 @@
+What to do to get started with TDD and React:
+1) Clone this repo: https://github.com/dceddia/getting-started-with-tdd-in-react
+2) Navigate to your new cloned repo in Terminal
+3) Run these Terminal commands:
+npm update
+npm install jsdom --save
+4) Edit setup.js to look like what's below (see "Change setup.js") 
+	(the commented-out lines should be removed and replaced with the others)
+5) Run this Terminal command:
+npm install babel-preset-env --save-dev
+6) Download and install version 7.6.0 of Node js (or later):
+Node: https://nodejs.org/en/blog/release/v7.6.0/
+
+What to do to get started with calendar (in the same project you created above):
+7) Run these Terminal commands:
+npm i --save react-big-calendar
+npm install moment --save
+8) Add all the stuff below to components.js (see "Change components.js"), below the first import:
+9) Replace the contents of index.js with what is below (see "New index.js")
+
+Some links: 
+Tutorial re TDD and React: https://semaphoreci.com/community/tutorials/getting-started-with-tdd-in-react
+Github repo for TDD and React: https://github.com/dceddia/getting-started-with-tdd-in-react
+CALENDAR:
+Documentation: https://intljusticemission.github.io/react-big-calendar/examples/index.html#intro
+Example project: https://github.com/intljusticemission/react-big-calendar.git
+Npm package: https://www.npmjs.com/package/react-big-calendar
+
+**************************
+Change setup.js:
+**************************
+
+require('babel-register')();
+
+var jsdom = require('jsdom');
+const { JSDOM } = jsdom;
+
+const { document } = (new JSDOM('')).window;
+global.document = document;
+Sample project: 
+
+// var jsdom = require('jsdom').jsdom;
+
+var exposedProperties = ['window', 'navigator', 'document'];
+
+// global.document = jsdom('');
+global.window = document.defaultView;
+**************************
+
+
+**************************
+Change components.js: 
+**************************
+import BigCalendar from 'react-big-calendar';
+import moment from 'moment';
+
+// Setup the localizer by providing the moment (or globalize) Object
+// to the correct localizer.
+BigCalendar.momentLocalizer(moment); // or globalizeLocalizer
+
+export class MyCalendar extends Component {
+  render() {
+	  //const myEventsList = Array(9).fill("event");
+	  const myDate = new Date();
+	  myDate.setFullYear(2017, 9, 19);	  
+	  
+	  const myDate2 = new Date();
+	  myDate2.setFullYear(2017, 9, 21);
+	  
+	  const myEventsList = [
+		{ title: 'Event 01', allday: true, startDate: myDate, endDate: myDate2 },
+		{ title: 'Event 02', allday: true, startDate: myDate, endDate: myDate2 },
+		{ title: 'Event 03', allday: true, startDate: myDate, endDate: myDate2 } ];
+	  
+    return (
+		<div>
+			<BigCalendar
+			  events={myEventsList}
+			  startAccessor='startDate'
+			  endAccessor='endDate'
+			/>
+		</div>
+    );
+  }
+}
+**************************
+
+
+**************************
+New index.js:
+**************************
+
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import {BeerListContainer} from './components';
+import {MyCalendar} from './components';
+import './node_modules/react-big-calendar/lib/css/react-big-calendar.css';
+
+ReactDOM.render(
+  <MyCalendar/>,
+  document.querySelector('#root'));
+
+**************************
